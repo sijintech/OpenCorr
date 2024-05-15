@@ -1,0 +1,3 @@
+/home/tanwen/OpenCorr/examples/build/CMakeFiles/sift_dic.dir
+/home/tanwen/OpenCorr/examples/build/CMakeFiles/edit_cache.dir
+/home/tanwen/OpenCorr/examples/build/CMakeFiles/rebuild_cache.dir
