@@ -1,10 +1,10 @@
-find_package(Eigen3 QUIET) # optional, for examples only
+find_package(Eigen3 REQUIRED) # optional, for examples only
 
 # examples:
 macro(DefineExample _NAME)
 	add_executable(${_NAME} ${_NAME}.cpp)
 	set_target_properties(${_NAME} PROPERTIES FOLDER "Examples")
-	target_link_libraries(${_NAME} nanoflann::nanoflann)  # adds the "#include" directory.
+	target_link_libraries(${_NAME} nanoflann::nanoflann Eigen3::Eigen)  # adds the "#include" directory.
 endmacro()
 
 DefineExample(dynamic_pointcloud_example)
@@ -20,7 +20,6 @@ DefineExample(vector_of_vectors_example)
 
 if(EIGEN3_FOUND)
 	DefineExample(matrix_example)
-	target_include_directories (matrix_example PRIVATE ${EIGEN3_INCLUDE_DIR})
 endif()
 
 # optional for gui examples:
