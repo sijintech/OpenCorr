@@ -17,7 +17,7 @@
 #ifndef _IMAGE_H_
 #define _IMAGE_H_
 
-#include <Eigen>
+#include <Eigen/Eigen>
 #include <opencv2/opencv.hpp>
 #include <opencv2/world.hpp>
 #include <opencv2/core/eigen.hpp>
